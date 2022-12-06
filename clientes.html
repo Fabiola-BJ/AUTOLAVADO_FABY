@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./css/views.css">
+</head>
+
+<body >
+    <div id="mySidebar" class="sidebar" >
+        <!--profile image & text-->
+        <div class="profile">
+            <img src="./imagenes/fabi.jpg"
+                alt="profile_picture">
+            <h3>Fabiola Bautista</h3>
+            <p>Designer</p>
+        </div>
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">x</a>
+        <ul class="menu">
+            <li><a href="./home.html"><span class="icono home"> </span> Inicio</a></li>
+            </li>
+            <li><a href="./clientes.html"><span class="icono cliente"> </span> Clientes</a></li>
+            <li><a href="./servicios.html"><span class="icono servicio"> </span>Servicios</a></li>
+            <li><a href="./trabajadores.html"><span class="icono trabajador"> </span>Trabajadores</a></li>
+            <li><a href="./ventas.html"><span class="icono venta"> </span>Ventas</a></li>
+            <li><a href="./index.html"><span class="icono salir"> </span>Salir</a></li>
+        </ul>
+    </div>
+
+
+    <div id="main">
+        <button class="openbtn" id="openbtn" onclick="openNav()">☰</button>
+        <h1 class="tituloprincipal"> Clientes</h1>
+        <div class="FormCliente">
+            <form>
+                <input type="text" name="nombre" id="nombre" class="txtdatos" placeholder="Nombre">
+                <input type="text" name="apellidouno" id="apellidouno" class="txtdatos" placeholder="Apellidouno">
+                <input type="text" name="apellidodos" id="apellidodos" class="txtdatos" placeholder="Apellidodos">
+                <br>
+                <input type="text" name="direccion" id="direccion" class="txtdireccion" placeholder="Direccion">
+                <input type="text" name="telefono" id="telefono" class="txtdatos" placeholder="Telefono">
+                <br>
+                <input type="text" name="correo" id="correo" class="correo" placeholder="correo@domain.com">
+
+                <input type="button" class="boton"  value="Agregar">
+
+            </form>
+        </div>
+
+
+        <div class="FormCliente">
+            <table class="datostabla">
+                <thead>
+                <tr>
+                    <th>Nombre</th>
+                    <th>Apellidos</th>
+                    <th>Direccion</th>
+                    <th>Telefono</th>
+                    <th>Correo</th>
+                    <th>Editar</th>
+                    <th>Eliminar</th>
+                </tr>
+            </thead>
+                <tr>
+                    <td>Joaquín</td>
+                    <td>Bautista</td>
+                    <td>Av. principal</td>
+                    <td>221 403 4527</td>
+                    <td>joaquin@utxicotepec.edu.mx</td>
+                    <td>df</td>
+                    <td>df</td>     
+                </tr>
+                <tr>
+                    <td>Braulio</td>
+                    <td>Hernández</td>
+                    <td>Av. Azaleas</td>
+                    <td>222 345 4576</td>
+                    <td>brau@utxicotepec.edu.mx</td>
+                    <td>df</td>
+                    <td>df</td>     
+                </tr>
+                <tr>
+                    <td>José</td>
+                    <td>Gómez</td>
+                    <td>Calle Azaleas</td>
+                    <td>764 102 9233</td>
+                    <td>gomez@utxicotepec.edu.mx</td>
+                    <td>df</td>
+                    <td>df</td>     
+                </tr>
+                <tr>
+                    <td>Helder Jared</td>
+                    <td>Bautista</td>
+                    <td>Calle Aztecas</td>
+                    <td>764 135 3445</td>
+                    <td>jared@utxicotepec.edu.mx</td>
+                    <td>df</td>
+                    <td>df</td>     
+                </tr>
+                <tr>
+                    <td>America</td>
+                    <td>Francisco</td>
+                    <td>Av. Negrete</td>
+                    <td>776 234 2334</td>
+                    <td>ame@utxicotepec.edu.mx</td>
+                    <td>df</td>
+                    <td>df</td>     
+                </tr>
+                <tr>
+                    <td>Miriam</td>
+                    <td>Reyes</td>
+                    <td>Calle 14 de Febrero</td>
+                    <td>55 77 16 60 74</td>
+                    <td>miri@utxicotepec.edu.mx</td>
+                    <td>df</td>
+                    <td>df</td>     
+                </tr>
+                <tr>
+                    <td>Fabiola</td>
+                    <td>Bautista</td>
+                    <td>Calle Itzalan</td>
+                    <td>776 234 5634</td>
+                    <td>fabi@utxicotepec.edu.mx</td>
+                    <td>df</td>
+                    <td>df</td>
+                </tr>
+            </table>
+        </div>
+
+
+    </div>
+
+    
+    <script src="./js/index.js"></script>
+</body>
+
+</html>
